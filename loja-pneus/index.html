@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Generoso Pneus em Alfenas MG | Auto Center</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generoso Pneus em Alfenas MG. Pneus, freios, suspensão, alinhamento, balanceamento e mecânica em geral.">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<a href="https://wa.me/5535999748858" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+</a>
+
+<header>
+    
+    <div class="header-container">
+        <h1>Generoso Pneus</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="servicos.html">Serviços</a>
+        </nav>
+    </div>
+</header>
+
+<div class="linha-verde"></div>
+
+<section class="hero"></section>
+
+<section class="conteudo">
+    
+    <h2>Sobre a empresa</h2>
+
+    <p>
+        A <strong>Generoso Pneus</strong> é um Auto Center completo,
+        oferecendo serviços automotivos com qualidade, segurança e confiança.
+    </p>
+
+    <p class="servicos-texto">
+        Pneus • Freios • Suspensão completa • Alinhamento • Cambagem •
+        Balanceamento • Baterias • Higienização do ar condicionado •
+        Troca de óleo • Filtros • Escapamentos • Mecânica em geral •
+        Correias • Limpeza de bico injetor • Sistema de arrefecimento •
+        Diagnóstico computadorizado • Entre outros
+    </p>
+</section>
+
+<section class="galeria">
+    <h2>Conheça nossa loja</h2>
+
+    <div class="carousel">
+        <button class="prev">&#10094;</button>
+
+        <div class="carousel-images">
+            <img src="imagens/logo.jpeg">
+            <img src="imagens/frente dia.jpeg">
+            <img src="imagens/frente-noite.jpeg">
+            <img src="imagens/recepcao.jpeg">
+            <img src="imagens/faixada1.jfif">
+            <img src="imagens/faixada2.jfif">
+        </div>
+
+        <button class="next">&#10095;</button>
+    </div>
+    <div class="youtube-btn">
+
+    <a 
+        href="https://www.youtube.com/watch?v=td6wKGDQGlE" 
+        target="_blank" 
+        class="btn-youtube">
+        ▶ Assista no YouTube
+    </a>
+</div>
+</section>
+<section class="mapa">
+    <h2>Onde Estamos</h2>
+
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3716.352154152879!2d-45.949907!3d-21.425676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b5f40e8f1c2d41%3A0x1a2b3c4d5e6f7890!2sAv.%20Jovino%20Fernandes%20de%20Sales%2C%201176%20-%20Alfenas%20MG!5e0!3m2!1spt-BR!2sbr!4v1710000000000"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</section>
+
+<section class="horario">
+    <h2>Horário de Funcionamento</h2>
+    <p>Segunda a Sexta: 08h às 18h</p>
+    <p>Sábado: 08h às 12h</p>
+</section>
+
+<footer>
+        <div class="social-final">
+        <a href="https://www.facebook.com/search/top?q=generoso%20pneus%20-%20car%20service&locale=pt_BR" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg">
+        </a>
+        <a href="https://www.instagram.com/generosopneus/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
+        </a>
+    </div>
+    <p>Av. Jovino Fernandes de Sales, 1176 – Alfenas / MG</p>
+    <p>📞 WhatsApp: (35) 99974-8858 | (35) 99906-2003</p>
+    <p>© 2025 - Generoso Pneus</p>
+</footer>
+
+<script>
+const carousel = document.querySelector('.carousel-images');
+const slides = carousel.children;
+let index = 0;
+
+function showSlide(i) {
+    carousel.style.transform = `translateX(-${i * 100}%)`;
+}
+
+document.querySelector('.next').onclick = () => {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+};
+
+document.querySelector('.prev').onclick = () => {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+};
+
+setInterval(() => {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+}, 3000);
+</script>
+
+</body>
+</html>
